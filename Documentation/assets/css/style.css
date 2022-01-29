@@ -1,0 +1,500 @@
+/* RESET */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	clear: both;
+	*zoom: 1;
+	font-family: "Open Sans", Arial, Sans-Serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	color: #222;
+	text-rendering: optimizelegibility;
+}
+
+body:before,
+body:after {
+	content: "";
+	display: table;
+}
+
+body:after {
+	clear: both;
+}
+
+body:before,
+body:after {
+	content: "";
+	display: table;
+}
+
+body:after {
+	clear: both;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+video {
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	padding: 30px;
+	background: #eee;
+	border: 1px solid #ddd;
+}
+
+strong,
+b {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+button,
+input[type="submit"] {
+	cursor: pointer;
+	border: 0;
+}
+
+input,
+textarea,
+select {
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-family: "Open Sans", Arial, Sans-Serif;
+}
+
+legend {
+	border: none;
+	margin-bottom: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+textarea {
+	resize: vertical;
+}
+
+iframe {
+	position: relative;
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+h4,
+.h4 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h5,
+.h5 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h6,
+.h6 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+hr {
+	border-top-color: #ddd;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+blockquote {
+	padding: 30px;
+	background: #e7e7e7;
+	border-left: 5px solid #dddddd;
+}
+
+li {
+	list-style-position: inside;
+	margin-bottom: 10px;
+}
+
+ul li ul{
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+p{
+	margin-bottom: 5px;
+}
+
+section{
+	padding: 25px 0;
+}
+
+.header,
+.main,
+.footer {
+	width: 100%;
+	clear: both;
+}
+
+/* HELPERS */
+
+/* ========================= */
+
+/*      SOCIAL KIT       	 */
+
+/* ========================= */
+
+.inline-block {
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1;
+	*display: inline;
+}
+
+.clear {
+	*zoom: 1;
+}
+
+.clear:before,
+.clear:after {
+	content: "";
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+
+/* ASSETS */
+
+/* ========================= */
+
+/*     BOOTSTRAP SIZES   	 */
+
+/* ========================= */
+
+.btn,
+.btn-lg,
+.btnl-sm,
+.btn-xs {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+	font-weight: 700;
+}
+
+.btn-lg {
+	padding: 11.5px 16px;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+/* ========================= */
+
+/*     BOOTSTRAP CUSTOM   	 */
+
+/* ========================= */
+
+.btn-round {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* ========================= */
+
+/*     BOOTSTRAP COLORS   	 */
+
+/* ========================= */
+
+.btn-default {
+	color: #110f16;
+	background: #ecf0f1;
+	border: #ecf0f1;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+	background: #dde4e6;
+	border: #dde4e6;
+}
+
+.btn-info {
+	background: #3498db;
+	border: #3498db;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+	background: #258cd1;
+	border: #258cd1;
+}
+
+.btn-danger {
+	background: #e74c3c;
+	border: #e74c3c;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+	background: #e43725;
+	border: #e43725;
+}
+
+.btn-warning {
+	background: #f39c12;
+	border: #f39c12;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+	background: #e08e0b;
+	border: #e08e0b;
+}
+
+.btn-success {
+	background: #2ecc71;
+	border: #2ecc71;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+	background: #29b765;
+	border: #29b765;
+}
+
+.btn-primary {
+	background: #18151f;
+	border: #18151f;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background: #050507;
+	border: #050507;
+}
+
+/* ========================= */
+
+/*    	 BTN TOGGLE      	 */
+
+/* ========================= */
+
+.btn-toggle {
+	position: relative;
+	display: block;
+	padding: 12px 15px;
+	color: #666;
+	background: #e2e2e2;
+	border: 1px solid #dddddd;
+}
+
+.btn-toggle:after {
+	content: "+";
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	width: 22px;
+	height: 24px;
+	display: block;
+	margin-top: -12px;
+	border: 1px solid #cdcdcd;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.btn-toggle[aria-expanded="true"]:after {
+	content: "-";
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+	color: #666;
+	background: #d8d8d8;
+}
+
+/* ========================= */
+
+/*     BOOTSTRAP SIZES   	 */
+
+/* ========================= */
+
+.label {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color: #ffffff;
+}
+
+/* ========================= */
+
+/*     BOOTSTRAP CUSTOM   	 */
+
+/* ========================= */
+
+.btn-round {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* ========================= */
+
+/*     BOOTSTRAP COLORS   	 */
+
+/* ========================= */
+
+.label-default {
+	color: #110f16;
+	background: #ecf0f1;
+	border: #ecf0f1;
+}
+
+.label-info {
+	background: #3498db;
+	border: #3498db;
+}
+
+.label-danger {
+	background: #e74c3c;
+	border: #e74c3c;
+}
+
+.label-warning {
+	background: #f39c12;
+	border: #f39c12;
+}
+
+.label-success {
+	background: #2ecc71;
+	border: #2ecc71;
+}
+
+.label-primary {
+	background: #18151f;
+	border: #18151f;
+}
+
+/* ========================= */
+
+/*     		HEADER 		  	 */
+
+/* ========================= */
+
+.header{
+	padding: 100px 0;
+	text-align: center;
+	background: #18151f;
+	color: #f1f1f1;
+}
+
+/* ========================= */
+
+/*    	SECTION COLORS 	 	 */
+
+/* ========================= */
+
+.section-light{
+	color: #222;
+	background: #eee;
+}
+
+/* ========================= */
+
+/*    		ASSETS 		 	 */
+
+/* ========================= */
+
+.border-top{
+	border-top: 2px solid #f1f1f1;
+}
+
+.section-content p, .section-content xmp{
+	margin-bottom: 15px;
+}
+
+.mb-30{
+	margin-bottom: 30px;
+}
+
+.mb-20{
+	margin-bottom: 20px;
+}
+
+.block{
+	display: block;
+}
+
+.mt-10{
+	margin-top: 10px;
+}

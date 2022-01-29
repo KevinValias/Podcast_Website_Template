@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+
+		<!-- =================================== -->
+		<!-- 		  COMPATIBILITY 			 -->
+		<!-- =================================== -->
+		
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+
+		<!-- =================================== -->
+		<!-- 			  TITLE 			 	 -->
+		<!-- =================================== -->
+
+		<title>Soundcast - Documentation</title>
+		
+		<!-- =================================== -->
+		<!-- 			  STYLES 				 -->
+		<!-- =================================== -->
+		
+		<!-- BOOTSTRAP MIN -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+		
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+		
+		<!-- FONT AWESOME -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+		
+		<!-- =================================== -->
+		<!-- 		 	THEME COLOR 			 -->
+		<!-- =================================== -->
+		
+		<meta name="theme-color" content="#fff" />
+		
+		<!-- =================================== -->
+		<!-- 			CONDITIONAL 			 -->
+		<!-- =================================== -->
+		
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- =================================== -->
+		<!-- 			 VIEWPORT 				 -->
+		<!-- =================================== -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+
+		<!-- =================================== -->
+		<!-- 			  AUTHOR 				 -->
+		<!-- =================================== -->
+
+		<meta name="author" content="reidark" />
+		<meta name="reply-to" content="support@reidark.com.br" />
+		<meta name="DC.publisher" content="reidark" />
+		<meta name="generator" content="Brackets" />
+
+		<!-- =================================== -->
+		<!-- 			 CONTENT 				 -->
+		<!-- =================================== -->
+
+		<meta name="description" content="Theme Documentation" />
+
+		<!-- =================================== -->
+		<!-- 			  FAVICON 				 -->
+		<!-- =================================== -->
+		
+		<link rel="icon" href="assets/img/favicon.png" />
+		<link rel="shortcut icon" href="assets/img/favicon.png" />
+
+	</head>
+
+	<body itemscope itemtype="http://schema.org/WebSite">
+		
+		<!-- ===== HEADER ===== -->
+		<header class="header">
+			<h1>Soundcast Docs v1.0</h1>
+			<p>Instructions and tips to get ready on Soundcast</p>
+		</header>
+		
+		<!-- ===== MAIN ===== -->
+		<main id="main" class="main">
+			
+			<!-- ===== THEME META ===== -->
+			<section class="section-light">
+				<div class="container">
+					<p><strong>Theme Name:</strong> Soundcast</p>
+					<p><strong>Created:</strong> March 10, 2016</p>
+					<p><strong>Version:</strong> 1.0</p>
+					<p><strong>Author:</strong> <a href="http://themeforest.net/user/reidark" target="_blank">reidark</a></p>
+					<p><strong>Email:</strong> <a href="mailto:support@reidark.com.br" target="_blank">support@reidark.com.br</a></p>
+					<p><strong>Theme URL:</strong> <a href="http://www.reidark.com.br/themes/soundcast" target="_blank">http://www.reidark.com.br/themes/soundcast</a></p>
+				</div>
+			</section>
+			
+			<!-- ===== TABLE OF CONTENTS ===== -->
+			<section>
+				<div class="container">
+				
+					<h2>Table of Contents</h2>
+					
+					<ul class="table-contents">
+						<li><a href="#file-structure">File Structure</a></li>
+						<li>
+							<a href="#html">HTML Structure</a>
+							<ul>
+								<li><a href="#header">Header Static, Absolute and Sticky</a></li>
+								<li><a href="#podcast-cards">Podcast Cards</a></li>
+								<li><a href="#podcast-category">Podcast Player, SoundCloud and Video</a></li>
+								<li><a href="#newsletter">MailChimp Newsletter</a></li>
+								<li><a href="#gallery">Image Gallery (Single Page, Podcast)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#css">CSS Structure</a>
+							<ul>
+								<li><a href="#less-how">How to use LESS</a></li>
+								<li><a href="#less-structure">LESS Modules Structure</a></li>
+								<li><a href="#theme-css">Theme CSS (Without LESS)</a></li>
+								<li><a href="#fonts">Fonts</a></li>
+							</ul>
+						</li>
+						<li><a href="#javascript">JavaScript</a></li>
+						<li><a href="#php">PHP</a></li>
+						<li><a href="#credits">Credits and Sources</a></li>
+						<li><a href="#support">Support</a></li>
+					</ul>
+					
+				</div>
+			</section>
+			
+			<!-- ===== FILE STRUCTURE ===== -->
+			<section id="file-structure" class="section-content border-top">
+				<div class="container">
+					<h2>File Structure</h2>
+					<p>Soundcast have a simple file structure, including LESS files</p>
+<pre>
+- Theme
+  -- HTML Files
+  -- PHP
+    -- contact.php
+  -- assets
+    -- audio
+       -- podcast audio (wav)
+    -- css
+       -- plugins & theme css
+    -- fonts
+      -- bootstrap glyphicons
+    -- img
+    -- js
+       -- plugins & theme js
+    -- less
+</pre>
+				</div>
+			</section>
+			
+			<!-- ===== HTML STRUCTURE ===== -->
+			<section id="html" class="section-content border-top">
+				<div class="container">
+				
+					<h2>HTML Structure</h2>
+					<p>Based on HTML5, Soundcast has a simple and compreensive structure, without complications.</p>
+					<p>Soundcast uses the <strong>Bootstrap</strong> framework to make things easy. Based on system grid with 12 columns and 1170px wide, everything is mobile friendly. When page width reaches 767px (viewport) the columns become fluid and stack vertically. Visit <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a> to check more about Bootstrap.</p>
+					<p>All HTML pages have been validated on <a href="https://validator.w3.org/#validate_by_input" target="_blank">W3 Validator.</a></p>
+					
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<!-- ===== HEADER ===== -->
+					<h3 id="header">Header Static, Absolute and Sticky</h3>
+					<p>In this theme we have 3 types of header, but, the only difference between the types is the position.</p>
+					
+					<!-- ===== STATIC ===== -->
+					<div class="mb-30">
+						<strong>Static</strong>
+						<p>The headers occupy a space in the page and don't move with scroll. To check an example, access the <u>static-header.html</u> in Theme. <br /> To make your header static, just add the "static" class (remove "absolute" or "sitcky" if need).</p>
+						<img src="assets/img/html/static.jpg" alt="Static Image" title="Static Image" />
+					</div>
+					
+					<!-- ===== ABSOLUTE ===== -->
+					<div class="mb-30">
+						<strong>Absolute</strong>
+						<p>Found on majority pages (check <u>index.html</u>), the absolute header doesn't occupy space and is placed in top of the page, but don't move with mouse scroll. <br /> To make your header absolute, just add the "absolute" class (remove "static" or "sticky" if need).</p>
+						<img src="assets/img/html/absolute.jpg" alt="Absolute Image" title="Absolute Image" />
+					</div>
+					
+					<!-- ===== STICKY ===== -->
+					<div class="mb-30">
+						<strong>Sticky</strong>
+						<p>Sticky doesn't occupy space in page, and, when scroll, the header follows the page scroll on the top. You can check this at <u>sticky-header.html</u>. In sticky header, we have a "data-offset" attribute to set an height value. This height is the amount of scroll needed to add a opacity background to header.<br /> To make your header sticky, just add the "sticky" class (remove "absolute" or "static" if need) and the "data-offset".</p>
+						<img src="assets/img/html/sticky.jpg" alt="Sticky Image" title="Sticky Image" />
+					</div>
+					
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<h3 id="podcast-cards">Podcast Cards</h3>
+					<p>The podcast cards is how we list the podcasts. For more customization, we have 3 types: Full, Boxed and Sidebar. <br /> The HTML structure of the types is the same, the only difference is the control class "full", "boxed", "sidebar".</p>
+					
+					<!-- ===== FULL ===== -->
+					<div class="mb-30">
+						<strong>Full</strong>
+						<p>If you need a fluid content, the full type is the best option. Just pick the "podcast-card" HTML structure and add the "full" class.</p>
+						<img src="assets/img/html/pod-full.jpg" alt="Podcast Full" />
+					</div>
+					
+					<!-- ===== BOXED ===== -->
+					<div class="mb-30">
+						<strong>Boxed</strong>
+						<p>With 2 columns, the boxed type is the "modern" way option. Just pick the "podcast-card" HTML structure and add the "boxed" class.</p>
+						<img src="assets/img/html/pod-boxed.jpg" alt="Podcast Boxed" />
+					</div>
+					
+					<!-- ===== SIDEBAR ===== -->
+					<div class="mb-30">
+						<strong>Sidebar</strong>
+						<p>If you need to list a podcast in a sidebar, just use the "sidebar" type. Pick the "podcast-card" HTML structure and add the "sidebar" class.</p>
+						<img src="assets/img/html/pod-sidebar.jpg" alt="Podcast Sidebar" />
+					</div>
+					
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<h3 id="podcast-category">Podcast Player, SoundCloud and Video</h3>
+					<p>Thinking in customization, with Soundcast you can choose between three categories: Custom Player, SoundCloud and Video.</p>
+					<p>The <strong>Custom Player</strong> is a JavaScript library called mediaelement.js and theres a lot of documentation around this. The essential is already done, but if you need some customization, check: <a href="http://mediaelementjs.com/" target="_blank">http://mediaelementjs.com/</a>.</p>
+					<p>For <strong>SoundCloud</strong> and <strong>Video (Vimeo, Youtube)</strong>, these platforms uses the iframe for better integration. If you want to use this category, just get the embed code from the platforms :)</p>
+					
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<h3 id="newsletter">MailChimp Newsletter</h3>
+					<p>The MailChimp integration is a simple form action that send data to the real MailChimp form. Follow the steps to get your form action:</p>
+					<ol>
+						<li>Log in your <a href="https://login.mailchimp.com/" target="_blank">MailChimp account</a></li>
+						<li>Click in "<a href="https://us10.admin.mailchimp.com/lists/" target="_blank">Lists</a>" tab</li>
+						<li>
+							Choose one of your Lists (or create one), open the options and choose Signup Forms
+							<figure class="mt-10"><img src="assets/img/html/mailchimp-option.jpg" alt="MailChimp Option" /></figure>
+						</li>
+						<li>Select "Embedded forms"</li>
+						<li>Click on the "Horizontal" tab</li>
+						<li>
+							In the "Horizontal" tab, scroll down and copy the form action on the code generated
+							<figure class="mt-10"><img src="assets/img/html/mailchimp-form.jpg" alt="MailChimp Form" /></figure>
+						</li>
+						<li>Now, just paste this action on the Soundcast newsletter form and is done!</li>
+					</ol>
+					
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<h3 id="gallery">Image Gallery (Single Page, Podcast)</h3>
+					<p>The structure to image gallery is simple, don't have secrets. The library behind this is <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">magnific-popup.js</a>.</p>
+<xmp><a href="assets/img/gallery/large/image.jpg" class="gallery-zoom">
+  <img src="assets/img/gallery/thumb/image.jpg" alt="Gallery" title="Gallery" />
+</a></xmp>
+					<p>Note: Don't forget the "gallery-zoom" class, it does the trick.</p>
+					
+				</div>
+			</section>
+			
+			<!-- ===== CSS ===== -->
+			<section id="css" class="section-content border-top">
+				<div class="container">
+					
+					<h2>CSS</h2>
+					<p>For better organization, we use LESS to made things easier.</p>
+					
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<h3 id="less-how">How to use LESS</h3>
+					<blockquote>
+						Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable.
+						<br />
+						<cite>LESSCSS.org</cite>
+					</blockquote>
+					<p>Code CSS with LESS is so simple and powerfull. Doesn't know how LESS works? The official website shows how to: <a href="http://lesscss.org/features/" target="_blank">LESS Feature</a></p>
+					
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<h3 id="less-structure">LESS Modules Structure</h3>
+					<p>The LESS folder is separated by modules with semantic names</p>
+<pre>
+- LESS
+  -- style.less (Import all other LESS files)
+  -- reset.less
+  -- assets (mostly, elements found across the theme)
+  -- helpers (mixins, colors and responsive variables)
+  -- structure (margins and clearfix)
+  -- template (general theme css, like footer, header, all)
+  -- texts (titles and texts)
+</pre>
+	
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<h3 id="theme-css">Theme CSS (Without LESS)</h3>
+					<p>For those who don't want to use LESS, the theme CSS is already generated in <strong>"assets/css/style.css"</strong>. Just use like always :D <br /> The CSS is well coded and commented, with good class semantics.</p>
+					
+					<!-- ===== HR ===== -->
+					<hr />
+					
+					<h3 id="fonts">Fonts</h3>
+					<p>All the <strong>texts fonts</strong> present in this theme is from Google Fonts. In Soundcast we use <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a> and <a href="https://www.google.com/fonts/specimen/Montserrat" target="_blank">Montserrat</a>. Feel free to change.</p>
+					
+				</div>
+			</section>
+			
+			<!-- ===== JAVASCRIPT ===== -->
+			<section id="javascript" class="section-content border-top">
+				<div class="container">
+					
+					<h2>JavaScript</h2>
+					<p>Soundcast theme uses <strong>jQuery</strong> as your main library. All JavaScript files are included in JS folder. <br /> The Soundcast JavaScript file is called main.js and has all other plugins calls and instances.</p>
+					<p>If you want to edit some variables, feel free to open the main.js file, but take care, some plugins has her own methods and names.</p>
+					
+				</div>
+			</section>
+			
+			<!-- ===== PHP ===== -->
+			<section id="php" class="section-content border-top">
+				<div class="container">
+					
+					<h2>PHP</h2>
+					<p>In Soundcast, the contact form is almost done, we just need you to configure one variable. To do that, follow the steps below:</p>
+					<p>Open the PHP file <strong>contact.php</strong> (php/ folder) and go to the line 19. Here, just alter the <strong>$address</strong> value to your contact email. Yes, just that.</p>
+					<p>After that, your contact form is ready!</p>
+					
+				</div>
+			</section>
+			
+			<!-- ===== SOURCES AND CREDITS ===== -->
+			<section id="credits" class="section-content border-top">
+				<div class="container">
+					
+					<h2>Credits and Sources</h2>
+					<p>First of all, we like to thanks all the authors and maintainers of plugins around de globe, they're awesome.</p>
+					
+					<p><strong>HTML</strong></p>
+					<ul class="mb-20">
+						<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+					</ul>
+					
+					<p><strong>CSS</strong></p>
+					<ul class="mb-20">
+						<li><a href="http://lesscss.org/" target="_blank">LESS</a></li>
+						<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a></li>
+						<li><a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+					</ul>
+					
+					<p><strong>JavaScript</strong></p>
+					<ul class="mb-20">
+						<li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+						<li><a href="https://github.com/modernizr/modernizr" target="_blank">Modernizr.js</a></li>
+						<li><a href="http://mediaelementjs.com" target="_blank">MediaElement.js</a></li>
+						<li><a href="https://github.com/dimsemenov/Magnific-Popup" target="_blank">MagnificPopup.js</a></li>
+						<li><a href="http://jqueryvalidation.org/" target="_blank">Validate.js</a></li>
+						<li><a href="https://github.com/mathiasbynens/jquery-placeholder" target="_blank">Placeholder.js</a></li>
+					</ul>
+					
+					<p><strong>Images (Demo only)</strong></p>
+					<ul class="mb-20">
+						<li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+					</ul>
+					
+				</div>
+			</section>
+			
+			<!-- ===== SOURCES AND CREDITS ===== -->
+			<section id="support" class="section-content border-top">
+				<div class="container">
+					
+					<h2>Support</h2>
+					<p>Has a question? Don't worry, we are here to help you. Send us a email on <strong>support@reidark.com.br</strong>.</p>
+					<p>Thank you for purchase this theme, without you, this maybe never happened.</p>
+					
+				</div>
+			</section>
+			
+		</main>
+		
+		<!-- ===== FOOTER ===== -->
+		<footer class="footer">
+			
+		</footer>
+		
+		<!-- =================================== -->
+		<!-- 			  SCRIPTS 				 -->
+		<!-- =================================== -->
+		
+		<!-- JQUERY -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+		<!-- BOOTSTRAP JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- THEME JS -->
+		<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
