@@ -201,7 +201,7 @@
 						<!-- ===== FORM CONTACT ===== -->
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2">
-								<form action="https://formsubmit.co/a51484f4ee2bc05d72fccd1386cb6b07" method="POST" id="form-contact" class="form-contact form-validate">
+								<form id="my-form" action="https://formsubmit.co/a51484f4ee2bc05d72fccd1386cb6b07" method="POST" id="form-contact" class="form-contact form-validate">
 									<fieldset>
 										<div class="mb-20">
 											<label for="name" class="label-control">Name* :</label>
@@ -372,6 +372,24 @@
 		<!-- =================================== -->
 		<!-- 			  SCRIPTS 				 -->
 		<!-- =================================== -->
+
+		<script>	
+		window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Thank You For Your Message!, We Will Respond Back To You As Soon As We Can!");
+    })
+  });
+});
+</script>
 		
 		<!-- JQUERY -->
 		<script src="assets/js/jquery-1.11.min.js"></script>
